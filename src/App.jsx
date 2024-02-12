@@ -1,13 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import useCountriesData from "./hooks/useCountriesData";
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  const url = "https://restcountries.com/v3.1/all?fields=name,flags";
+  const { countriesData, loading, error } = useCountriesData(url);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
+
+  console.log(countriesData);
+
+  return <div>Check the console for data.</div>;
 };
 
 export default App;
