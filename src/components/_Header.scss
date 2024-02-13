@@ -1,0 +1,17 @@
+@import "../styles/colors";
+
+.header__ {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    background-color: var(--clr-elements);
+    padding: 0 2rem;
+    color: var(--clr-text);
+    box-shadow: 0px 2px 3px 3px var(--clr-shadow);
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,29 @@
+.container-main {
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+}
+
+.button_back {
+    display: flex;
+
+    .link-home {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        width: 135px;
+        height: 40px;
+        background-color: var(--clr-bg);
+        color: var(--clr-text);
+        border: 1px solid var(--clr-text);
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

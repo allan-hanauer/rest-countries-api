@@ -1,0 +1,21 @@
+.toggle-container {
+    display: flex;
+    background: none;
+    border: none;
+    align-items: center;
+    color: var(--clr-text);
+    padding: 0;
+    margin: 0;
+    gap: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+}

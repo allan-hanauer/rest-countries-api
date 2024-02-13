@@ -1,0 +1,40 @@
+:root {
+    --clr-bg : $ {
+        hsl(0, 0%, 98%)
+    }
+
+    ;
+
+    --clr-text : $ {
+        $clr-text: hsl(200, 15%, 8%)
+    }
+
+    ;
+
+    --clr-elements: $ {
+        hsl(0, 0%, 100%)
+    }
+
+    ;
+
+    --clr-shadow: {
+        hsla(0, 0%, 57%, 0.08)
+    }
+
+    ;
+}
+
+[data-theme="dark"] {
+    --clr-bg: hsl(207, 26%, 17%);
+    --clr-text: hsl(0, 0%, 100%);
+    --clr-elements: hsl(209, 23%, 22%);
+    --clr-shadow: hsla(207, 26%, 17%, 0.4);
+}
+
+[data-theme="light"] {
+    --clr-bg: hsl(0, 0%, 98%);
+    --clr-text: hsl(200, 15%, 8%);
+    --clr-elements: hsl(0, 0%, 100%);
+    --clr-shadow: hsla(0, 0%, 57%, 0.2);
+    ;
+}

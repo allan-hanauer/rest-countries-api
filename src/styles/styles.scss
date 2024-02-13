@@ -1,0 +1,22 @@
+@import "./fonts";
+@import "./colors";
+@import "../components/Header";
+@import "../components/_Toggle";
+@import "../components/_CountryContainer";
+@import "../pages/_Home";
+@import "../pages/Coutries";
+
+* {
+    box-sizing: border-box;
+    font-family: Nunito Sans, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+body,
+#root {
+    width: 100%;
+    background-color: var(--clr-bg);
+}

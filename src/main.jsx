@@ -5,13 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import queryClient from "./services/queryClient.js";
 
-import "./index.css";
-
 import Home from "./pages/Home.jsx";
 import Coutries from "./pages/Coutries.jsx";
 import App from "./App.jsx";
 import ErrorPage from "./pages/Error.jsx";
-
+import "./styles/styles.css";
 const router = createBrowserRouter([
   {
     path: "/",

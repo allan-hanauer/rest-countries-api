@@ -1,6 +1,8 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import axios from "axios";
+import CoutryDesc from "../components/CoutryDesc";
+
 const Coutries = () => {
   const params = useParams();
   console.log(params.id);
@@ -17,7 +19,7 @@ const Coutries = () => {
       refetchOnWindowFocus: false,
     }
   );
-  console.log(data);
+
   if (isFetching) {
     return <div>Loading...</div>;
   }
@@ -26,9 +28,17 @@ const Coutries = () => {
     return <div>Error fetching data: {error.message}</div>;
   }
 
+  console.log(data);
+  console.log(data[0].flags.png);
+
   return (
-    <div>
-      <h1>{data[0]?.name?.common}</h1>
+    <div className="container-main">
+      <div className="button_back">
+        <Link className="link-home" to="/">
+          <span>home</span>
+        </Link>
+      </div>
+      <CoutryDesc country={data[0]} />
     </div>
   );
 };
