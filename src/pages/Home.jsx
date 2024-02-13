@@ -2,6 +2,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import { useState } from "react";
 import CountryContainer from "../components/CountryContainer";
+import Loading from "../components/Loading";
 
 const Home = () => {
   const { data, isFetching, error } = useQuery(
@@ -26,7 +27,11 @@ const Home = () => {
   const [showAll, setShowAll] = useState(true);
 
   if (isFetching) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   if (error) {

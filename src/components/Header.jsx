@@ -1,9 +1,11 @@
 import Toogle from "./Toggle";
-
+import { Link } from "react-router-dom";
 const Header = ({ isDark, setIsDark }) => {
   return (
     <header className="header__" data-theme={isDark ? "dark" : "light"}>
-      <h1>Where in the world?</h1>
+      <h1>
+        <Link to="/">Where in the world?</Link>
+      </h1>
       <Toogle isDark={isDark} setIsDark={setIsDark} />
     </header>
   );

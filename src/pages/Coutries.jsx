@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import axios from "axios";
 import CoutryDesc from "../components/CoutryDesc";
+import Loading from "../components/Loading";
 
 const Coutries = () => {
   const params = useParams();
@@ -21,7 +22,11 @@ const Coutries = () => {
   );
 
   if (isFetching) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   if (error) {

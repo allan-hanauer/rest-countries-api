@@ -29,6 +29,7 @@ main {
         background-color: var(--clr-elements);
         color: var(--clr-text);
         border-radius: 6px;
+        box-shadow: 0px 0px 5px 1px var(--clr-shadow);
 
     }
 
@@ -42,6 +43,7 @@ label {
         width: 201px;
         padding: 10px 21px;
         font-weight: 300;
+        box-shadow: 0px 0px 5px 1px var(--clr-shadow);
         border: none;
         font-size: 0.875rem;
         border-radius: 6px;
@@ -50,22 +52,20 @@ label {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
+        cursor: pointer;
 
         option {
             background-color: var(--clr-elements);
             color: var(--clr-text);
             padding: 10px;
             font-size: 1rem;
+            cursor: pointer;
         }
 
         option:focus {
             background-color: var(--clr-bg);
             color: var(--clr-text);
             padding: 10px;
-        }
-
-        option:hover {
-            background-color: red;
         }
     }
 
@@ -76,5 +76,23 @@ label {
         font-size: 0.875rem;
         margin-left: 175px;
         margin-top: 19px;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .container__countries {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .container__countries {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .container__countries {
+        grid-template-columns: 1fr;
     }
 }

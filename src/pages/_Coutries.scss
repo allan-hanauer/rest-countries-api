@@ -7,15 +7,22 @@
 .button_back {
     display: flex;
 
+    .link-home:hover {
+        background-color: var(--clr-text);
+        color: var(--clr-bg);
+    }
+
     .link-home {
         display: flex;
         justify-content: baseline;
         align-items: center;
         width: 135px;
         height: 40px;
-        background-color: var(--clr-bg);
+        background-color: var(--clr-elements);
         color: var(--clr-text);
-        border: 1px solid var(--clr-text);
+        border-radius: 3px;
+        text-transform: capitalize;
+        box-shadow: 0px 0px 10px 2px var(--clr-shadow);
 
         span {
             display: flex;
@@ -24,6 +31,13 @@
             width: 100%;
             height: 100%;
         }
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .container-main {
+        padding: 2rem 0;
     }
 
 }
