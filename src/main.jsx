@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/rest-countries-api", element: <Home /> },
       {
-        path: "/:id",
+        path: "/rest-countries-api/:id",
         element: <Coutries />,
       },
     ],

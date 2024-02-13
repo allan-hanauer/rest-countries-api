@@ -9,7 +9,7 @@ const CountryContainer = ({ name, flag, population, capital, region }) => {
     <div className="container__country">
       <img className="flag" src={flag} alt={`flag-${name}`} />
       <div className="container__desc">
-        <Link to={`/${name}`}>
+        <Link to={`/rest-countries-api/${name}`}>
           <h2>{name}</h2>
         </Link>
         <p>
