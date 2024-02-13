@@ -4,7 +4,7 @@ const Header = ({ isDark, setIsDark }) => {
   return (
     <header className="header__" data-theme={isDark ? "dark" : "light"}>
       <h1>
-        <Link to="/">Where in the world?</Link>
+        <Link to="/rest-countries-api">Where in the world?</Link>
       </h1>
       <Toogle isDark={isDark} setIsDark={setIsDark} />
     </header>

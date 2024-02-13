@@ -39,7 +39,7 @@ const Coutries = () => {
   return (
     <div className="container-main">
       <div className="button_back">
-        <Link className="link-home" to="/">
+        <Link className="link-home" to="/rest-countries-api">
           <span>home</span>
         </Link>
       </div>

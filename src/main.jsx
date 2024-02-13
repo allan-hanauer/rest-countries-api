@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/rest-countries-api", element: <Home /> },
       {
         path: "/:id",
         element: <Coutries />,
